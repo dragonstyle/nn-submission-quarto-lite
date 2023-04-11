@@ -1,0 +1,42 @@
+# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
+version: 1
+project:
+  title: La Palma Earthquakes
+  description: >-
+    Analysis of seismic event data during the 2021 eruption of the Cumbra Vieja
+    volcano on the island of La Palma in the Canary Islands.
+  authors:
+    - name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      corresponding: true
+      email: steve@curvenote.com
+      roles:
+        - Investigation
+        - Project administration
+        - Software
+        - Visualization
+      affiliations:
+        - Curvenote
+    - name: Rowan Cockett
+      orcid: 0000-0002-7859-8394
+      corresponding: false
+      roles: []
+      affiliations:
+        - Curvenote
+  github: https://github.com/stevejpurves/ign-earthquake-data
+  open_access: true
+  license:
+    content: CC-BY-SA-4.0
+    code: MIT
+  subject: Geoscience
+  exports:
+    - format: pdf
+      article: la-palma-visualization.ipynb
+      template: agu2019
+      keypoint_1: IGN data allows earthquake depth visualization at La Palma
+      keypoint_2: Analysis of this data supports the presence of two magma reservoirs
+      journal_name: Tectonics
+      output: la-palma-visualization.pdf
+    - format: jats
+      article: la-palma-visualization.ipynb
+      output: la-palma-visualization.xml
