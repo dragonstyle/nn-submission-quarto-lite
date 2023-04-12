@@ -60,3 +60,5 @@ site:
     - title: Notebooks Now!
       url: https://data.agu.org/notebooks-now/
   template: book-theme
+  domains:
+    - rowanc1-notebooks_now_myst_lite.curve.space
