@@ -5,3 +5,7 @@ _build
 la-palma-visualization.pdf
 la-palma-visualization.xml
 files/
+/article_files
+/article.html
+/article.pdf
+/article.xml
