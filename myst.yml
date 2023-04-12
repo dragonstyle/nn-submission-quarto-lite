@@ -1,9 +1,9 @@
 # See docs at: https://myst-tools.org/docs/mystjs/frontmatter
 version: 1
 project:
-  title: |-
-    Title will be pulled directly from the first header of the article
-    or you can specify title in the page frontmatter of the article
+  # Title will be pulled directly from the first header of the article
+  # or you can specify title in the page frontmatter of the article
+  title: Notebooks Now! MyST Submission Template (lite)
   authors:
     - name: Steve Purves
       orcid: 0000-0002-0760-5497
@@ -18,12 +18,13 @@ project:
         - Curvenote
     - name: Rowan Cockett
       orcid: 0000-0002-7859-8394
-      corresponding: false
-      roles: []
+      roles:
+        - Project administration
       affiliations:
         - Curvenote
   github: https://github.com/stevejpurves/ign-earthquake-data
-  binder: https://mybinder.org/v2/gh/curvenote/nn-submission-myst-lite/HEAD?labpath=la-palma-visualization.ipynb
+  binder: >-
+    https://mybinder.org/v2/gh/curvenote/nn-submission-myst-lite/HEAD?labpath=la-palma-visualization.ipynb
   open_access: true
   license:
     content: CC-BY-SA-4.0
@@ -46,3 +47,16 @@ project:
       keypoint_3: They are specific to this PDF template, so they will not appear in other exports
       journal_name: Notebooks Now!
       draft: false
+site:
+  title: La Palma Seismicity 2021
+  logo_text: La Palma Seismicity 2021
+  projects:
+    - slug: agu
+      path: .
+  nav:
+    - title: MyST Docs
+      url: https://myst-tools.org/docs/mystjs
+  actions:
+    - title: Notebooks Now!
+      url: https://data.agu.org/notebooks-now/
+  template: book-theme
