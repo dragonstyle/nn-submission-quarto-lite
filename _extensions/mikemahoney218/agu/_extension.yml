@@ -1,0 +1,42 @@
+title: AGU Template
+author: Mike Dervieux
+version: 0.1.0
+contributes:
+  formats:
+    common:
+      # define below YAML configuration common to all formats
+#      filters:
+        # You can include here Lua filters from your extension format 
+      shortcodes:
+        # You can include here Lua filters defining shortcodes from your extension
+        - shortcodes.lua
+      knitr:
+        opts_chunk:
+          echo: false
+      number-sections: true
+      csl: https://www.zotero.org/styles/american-geophysical-union
+    pdf:
+      # define default configuration for the pdf version of your format
+      documentclass: agujournal2019
+      classoptions: draft
+      header-includes: |
+        \usepackage{url} %this package should fix any errors with URLs in refs.
+        \usepackage{lineno}
+        \usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
+        \usepackage{soul}
+        \linenumbers
+      template-partials:
+        # Add here the partials your format is using
+        - "partials/title.tex"
+        - "partials/_authors.tex"
+        - "partials/before-body.tex"
+        - "partials/_affiliations.tex"
+        - "partials/_corresponding-author.tex"
+      format-resources:
+        # Add here the resources required for the PDF rendering
+        - agujournal2019.cls
+        - trackchanges.sty
+    html:
+      # define default configuration for the html version of your format
+      toc: true
+      # Use a CSL file to style (https://www.zotero.org/styles/)
