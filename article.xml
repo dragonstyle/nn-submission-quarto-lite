@@ -151,26 +151,101 @@ system feeding the currently very active volcano.</p>
         <p>This equates to an eruption on average every 79 years up until
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution
-    (<xref alt="poisson?" rid="ref-poisson" ref-type="bibr"><bold>poisson?</bold></xref>).</p>
+    <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>.</p>
         <disp-quote>
           <p>Numbered equations may be defined using the
       <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/math">math
       directive or in line</ext-link>. Equations defined with the math
       directive may be reference in the text by label.</p>
         </disp-quote>
-        <p><disp-formula><alternatives><tex-math><![CDATA[
+        <p>
+          <styled-content id="eq-poisson">
+            <disp-formula>
+              <alternatives>
+                <tex-math><![CDATA[
     p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-    ]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></alternatives></disp-formula>
-    {#poisson}</p>
+     \qquad(1)]]></tex-math>
+                <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mml:mrow>
+                    <mml:mi>p</mml:mi>
+                    <mml:mrow>
+                      <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                      <mml:mi>x</mml:mi>
+                      <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mo>=</mml:mo>
+                    <mml:mfrac>
+                      <mml:mrow>
+                        <mml:msup>
+                          <mml:mi>e</mml:mi>
+                          <mml:mrow>
+                            <mml:mo>−</mml:mo>
+                            <mml:mi>λ</mml:mi>
+                          </mml:mrow>
+                        </mml:msup>
+                        <mml:msup>
+                          <mml:mi>λ</mml:mi>
+                          <mml:mi>x</mml:mi>
+                        </mml:msup>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>x</mml:mi>
+                        <mml:mi>!</mml:mi>
+                      </mml:mrow>
+                    </mml:mfrac>
+                    <mml:mspace width="2.0em"/>
+                    <mml:mrow>
+                      <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:math>
+              </alternatives>
+            </disp-formula>
+          </styled-content>
+        </p>
         <p>Where <inline-formula><alternatives><tex-math><![CDATA[\lambda]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
     is the number of eruptions per year, <inline-formula><alternatives><tex-math><![CDATA[\lambda=\frac{1}{79}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>λ</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mn>79</mml:mn></mml:mfrac></mml:mrow></mml:math></alternatives></inline-formula>
     in this case. The probability of a future eruption in the next
     <inline-formula><alternatives><tex-math><![CDATA[t]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
     years can be calculated by:</p>
-        <p><disp-formula><alternatives><tex-math><![CDATA[
+        <p>
+          <styled-content id="eq-probability">
+            <disp-formula>
+              <alternatives>
+                <tex-math><![CDATA[
     p_e = 1-\mathrm{e}^{-t \lambda}
-    ]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block"><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>e</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>−</mml:mo><mml:msup><mml:mi mathvariant="normal">e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>t</mml:mi><mml:mi>λ</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></disp-formula>
-    {#probability}</p>
+     \qquad(2)]]></tex-math>
+                <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>e</mml:mi>
+                    </mml:msub>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                    <mml:mo>−</mml:mo>
+                    <mml:msup>
+                      <mml:mi mathvariant="normal">e</mml:mi>
+                      <mml:mrow>
+                        <mml:mo>−</mml:mo>
+                        <mml:mi>t</mml:mi>
+                        <mml:mi>λ</mml:mi>
+                      </mml:mrow>
+                    </mml:msup>
+                    <mml:mspace width="2.0em"/>
+                    <mml:mrow>
+                      <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                      <mml:mn>2</mml:mn>
+                      <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:math>
+              </alternatives>
+            </disp-formula>
+          </styled-content>
+        </p>
         <p>So following the 1971 eruption the probability of an eruption in
     the following 50 years — the period ending this year — was 0.469.
     After the event, the number of eruptions per year moves to
@@ -204,7 +279,7 @@ system feeding the currently very active volcano.</p>
     reservoirs feeding the Cumbre Vieja volcano; one in the mantle
     (30-40km depth) which charges and in turn feeds a shallower crustal
     reservoir (10-20km depth).</p>
-        <fig id="fig-resevoirs">
+        <fig id="fig-reservoirs">
           <caption>
             <p>Figure 2: Proposed model from Marrero et al.
       (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>)</p>
@@ -213,7 +288,7 @@ system feeding the currently very active volcano.</p>
         </fig>
         <p>In this paper, we look at recent seismicity data to see if we can
     see evidence of such a system action, see
-    (<xref alt="reservoirs?" rid="ref-reservoirs" ref-type="bibr"><bold>reservoirs?</bold></xref>).</p>
+    <xref alt="Figure 2" rid="fig-reservoirs">Figure 2</xref>.</p>
       </sec>
     </sec>
     <sec id="dataset">

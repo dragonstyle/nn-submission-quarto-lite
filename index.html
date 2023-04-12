@@ -218,17 +218,17 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-<p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <span class="citation" data-cites="poisson">(<a href="#ref-poisson" role="doc-biblioref"><strong>poisson?</strong></a>)</span>.</p>
+<p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson">Equation&nbsp;1</a>.</p>
 <blockquote class="blockquote">
 <p>Numbered equations may be defined using the <a href="https://myst-tools.org/docs/mystjs/math">math directive or in line</a>. Equations defined with the math directive may be reference in the text by label.</p>
 </blockquote>
-<p><span class="math display">\[
+<p><span id="eq-poisson"><span class="math display">\[
 p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-\]</span> {#poisson}</p>
+\tag{1}\]</span></span></p>
 <p>Where <span class="math inline">\(\lambda\)</span> is the number of eruptions per year, <span class="math inline">\(\lambda=\frac{1}{79}\)</span> in this case. The probability of a future eruption in the next <span class="math inline">\(t\)</span> years can be calculated by:</p>
-<p><span class="math display">\[
+<p><span id="eq-probability"><span class="math display">\[
 p_e = 1-\mathrm{e}^{-t \lambda}
-\]</span> {#probability}</p>
+\tag{2}\]</span></span></p>
 <p>So following the 1971 eruption the probability of an eruption in the following 50 years — the period ending this year — was 0.469. After the event, the number of eruptions per year moves to <span class="math inline">\(\lambda=\frac{1}{75}\)</span> and the probability of a further eruption within the next 50 years (2022-2071) rises to 0.487 and in the next 100 years, this rises again to 0.736.</p>
 </section>
 <section id="magma-reservoirs" class="level2">
@@ -237,13 +237,13 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <p>You may <a href="https://myst-tools.org/docs/mystjs/citations">add citations two ways</a>. First, you may simply insert a markdown link link to a DOI like so: <a href="10.1093/nar/22.22.4673"></a>. No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as <code>references.bib</code> BibTeX file, then embed the citation by BibTeX key in your text using the <code>cite:p</code> or <code>cite:t</code> for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.</p>
 </blockquote>
 <p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">(<a href="#ref-marrero2019" role="doc-biblioref">Marrero et al. 2019</a>)</span> has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-<div id="fig-resevoirs" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-reservoirs" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/reservoirs.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2: Proposed model from <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span></figcaption><p></p>
 </figure>
 </div>
-<p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <span class="citation" data-cites="reservoirs">(<a href="#ref-reservoirs" role="doc-biblioref"><strong>reservoirs?</strong></a>)</span>.</p>
+<p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs">Figure&nbsp;2</a>.</p>
 </section>
 </section>
 <section id="dataset" class="level1">
