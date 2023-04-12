@@ -16,6 +16,10 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: pre-release
+          
+      - name: Install Tex
+        run: |
+          quarto install tinytex
 
       - name: Render and Publish 
         uses: quarto-dev/quarto-actions/publish@v2
