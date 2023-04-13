@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -114,10 +80,11 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#main-timeline-figure" id="toc-main-timeline-figure" class="nav-link" data-scroll-target="#main-timeline-figure">Main Timeline Figure</a></li>
   <li><a href="#visualising-long-term-earthquake-data" id="toc-visualising-long-term-earthquake-data" class="nav-link" data-scroll-target="#visualising-long-term-earthquake-data">Visualising Long term earthquake data</a></li>
-  <li><a href="#cumulative-distrubtion-plots" id="toc-cumulative-distrubtion-plots" class="nav-link" data-scroll-target="#cumulative-distrubtion-plots">Cumulative Distrubtion Plots</a></li>
+  <li><a href="#cumulative-distribution-plots" id="toc-cumulative-distribution-plots" class="nav-link" data-scroll-target="#cumulative-distribution-plots">Cumulative Distribution Plots</a></li>
   </ul></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="article.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></li><li><a href="article.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="article.xml"><i class="bi bi-file"></i>JATS</a></li></ul></div></nav>
 </div>
@@ -173,8 +140,8 @@ div.csl-indent {
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <blockquote class="blockquote">
 <p>The content of your notebook may be broken into any number of markdown or code cells. Markdown cells use MyST markdown and support <a href="https://myst-tools.org/docs/mystjs/typography">standard markdown typography</a> and many <a href="https://myst-tools.org/docs/mystjs/syntax-overview">directives and roles</a> for figures, tables, equations, etc.</p>
 </blockquote>
@@ -186,8 +153,8 @@ div.csl-indent {
 </figure>
 </div>
 <p>La Palma has been constructed by various phases of volcanism, the most recent and currently active being the <em>Cumbre Vieja</em> volcano, a north-south volcanic ridge that constitutes the southern half of the island.</p>
-<section id="eruption-history" class="level2">
-<h2 class="anchored" data-anchor-id="eruption-history">Eruption History</h2>
+<section id="eruption-history" class="level3">
+<h3 class="anchored" data-anchor-id="eruption-history">Eruption History</h3>
 <p>A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in <a href="#tbl-history">Table&nbsp;1</a>.</p>
 <blockquote class="blockquote">
 <p>Simple tables may be created using the <a href="https://myst-tools.org/docs/mystjs/tables">list-table directive</a>. Similar to figures, tables may be referenced in the text by their <code>name</code>. The caption for this table is the first line of the directive.</p>
@@ -250,8 +217,8 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 \tag{2}\]</span></span></p>
 <p>So following the 1971 eruption the probability of an eruption in the following 50 years — the period ending this year — was 0.469. After the event, the number of eruptions per year moves to <span class="math inline">\(\lambda=\frac{1}{75}\)</span> and the probability of a further eruption within the next 50 years (2022-2071) rises to 0.487 and in the next 100 years, this rises again to 0.736.</p>
 </section>
-<section id="magma-reservoirs" class="level2">
-<h2 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h2>
+<section id="magma-reservoirs" class="level3">
+<h3 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h3>
 <blockquote class="blockquote">
 <p>You may <a href="https://myst-tools.org/docs/mystjs/citations">add citations two ways</a>. First, you may simply insert a markdown link link to a DOI like so: <a href="10.1093/nar/22.22.4673"></a>. No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as <code>references.bib</code> BibTeX file, then embed the citation by BibTeX key in your text using the <code>cite:p</code> or <code>cite:t</code> for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.</p>
 </blockquote>
@@ -265,415 +232,62 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs">Figure&nbsp;2</a>.</p>
 </section>
 </section>
-<section id="dataset" class="level1">
-<h1>Dataset</h1>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
 <blockquote class="blockquote">
 <p>All data used in the notebook should be present in the <code>data/</code> folder so notebooks may be executed in place with no additional input.</p>
 </blockquote>
 <p>The earthquake dataset used in our analysis was generated from the <a href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN web portal</a> this is public data released under a permissive license. Data recorded using the network of Seismic Monitoring Stations on the island. A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
-<section id="main-timeline-figure" class="level2">
-<h2 class="anchored" data-anchor-id="main-timeline-figure">Main Timeline Figure</h2>
+<section id="main-timeline-figure" class="level3">
+<h3 class="anchored" data-anchor-id="main-timeline-figure">Main Timeline Figure</h3>
 <blockquote class="blockquote">
 <p>Code cells may be seamlessly interleaved with markdown cells. Currently, with a single-article submission, code cannot be hidden in the output document.</p>
 </blockquote>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;ZISfEJFqxUctSHwhcorN&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:2},&quot;outputId&quot;:null}" data-tags="[]" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;lBOAWXLccEtqpglJr0Dk&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:null}" data-tags="[]" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_category_columns(df):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'Depth'</span>] <span class="op">=</span> <span class="st">'Shallow (&lt;18km)'</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Depth(km)'</span>] <span class="op">&gt;=</span> <span class="dv">18</span>) <span class="op">&amp;</span> (df[<span class="st">'Depth(km)'</span>] <span class="op">&lt;=</span> <span class="dv">28</span>), <span class="st">'Depth'</span>] <span class="op">=</span> <span class="st">'Interchange (18km&gt;x&gt;28km)'</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    df.loc[df[<span class="st">'Depth(km)'</span>] <span class="op">&gt;=</span> <span class="dv">28</span>, <span class="st">'Depth'</span>] <span class="op">=</span> <span class="st">'Deep (&gt;28km)'</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="dv">1</span>) <span class="op">&amp;</span> (df[<span class="st">'Magnitude'</span>] <span class="op">&lt;=</span> <span class="dv">2</span>), <span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="dv">2</span>) <span class="op">&amp;</span> (df[<span class="st">'Magnitude'</span>] <span class="op">&lt;=</span> <span class="dv">3</span>), <span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">2</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="dv">3</span>) <span class="op">&amp;</span> (df[<span class="st">'Magnitude'</span>] <span class="op">&lt;=</span> <span class="dv">4</span>), <span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="dv">4</span>) <span class="op">&amp;</span> (df[<span class="st">'Magnitude'</span>] <span class="op">&lt;=</span> <span class="dv">5</span>), <span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">4</span>    </span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
-<section id="visualising-long-term-earthquake-data" class="level2">
-<h2 class="anchored" data-anchor-id="visualising-long-term-earthquake-data">Visualising Long term earthquake data</h2>
+<section id="visualising-long-term-earthquake-data" class="level3">
+<h3 class="anchored" data-anchor-id="visualising-long-term-earthquake-data">Visualising Long term earthquake data</h3>
 <p>Data taken directly from the IGN Catalog</p>
 <blockquote class="blockquote">
 <p>Supported cell outputs below include <code>pandas</code> dataframe, raw text output, <code>matplotlib</code> plot, and <code>seaborn</code> plot.</p>
 </blockquote>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;Ir6X9Y2h5mYAQSDC3XMR&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;WnsojgIfCrVCuMdcylqC&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> pd.read_csv(<span class="st">'./data/lapalma_ign.csv'</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> make_category_columns(df_ign)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df_ign.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
-<div id="tbl-preview" class="anchored">
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<caption>Table&nbsp;2: A preview of raw long term data.</caption>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Event</th>
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th">UTC time</th>
-<th data-quarto-table-cell-role="th">Local time(*)</th>
-<th data-quarto-table-cell-role="th">Latitude</th>
-<th data-quarto-table-cell-role="th">Longitude</th>
-<th data-quarto-table-cell-role="th">Depth(km)</th>
-<th data-quarto-table-cell-role="th">Magnitude</th>
-<th data-quarto-table-cell-role="th">Mag. type</th>
-<th data-quarto-table-cell-role="th">Max. int</th>
-<th data-quarto-table-cell-role="th">Region</th>
-<th data-quarto-table-cell-role="th">More Info</th>
-<th data-quarto-table-cell-role="th">Depth</th>
-<th data-quarto-table-cell-role="th">Mag</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>es2022cibon</td>
-<td>2022-02-02</td>
-<td>20:46:39</td>
-<td>21:46:39</td>
-<td>40.7805</td>
-<td>3.4874</td>
-<td>2.0</td>
-<td>2.0</td>
-<td>mbLg</td>
-<td>NaN</td>
-<td>MEDITERRÁNEO-BALEARES</td>
-<td>NaN</td>
-<td>Shallow (&lt;18km)</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>es2022cibcw</td>
-<td>2022-02-02</td>
-<td>20:33:08</td>
-<td>21:33:08</td>
-<td>35.4494</td>
-<td>-3.6606</td>
-<td>13.0</td>
-<td>2.3</td>
-<td>mbLg</td>
-<td>NaN</td>
-<td>ALBORÁN SUR</td>
-<td>NaN</td>
-<td>Shallow (&lt;18km)</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>es2022ciaxl</td>
-<td>2022-02-02</td>
-<td>20:26:45</td>
-<td>21:26:45</td>
-<td>35.4879</td>
-<td>-3.6302</td>
-<td>27.0</td>
-<td>2.0</td>
-<td>mbLg</td>
-<td>NaN</td>
-<td>ALBORÁN SUR</td>
-<td>NaN</td>
-<td>Interchange (18km&gt;x&gt;28km)</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>es2022ciavv</td>
-<td>2022-02-02</td>
-<td>20:24:52</td>
-<td>21:24:52</td>
-<td>35.4216</td>
-<td>-3.6531</td>
-<td>17.0</td>
-<td>2.3</td>
-<td>mbLg</td>
-<td>NaN</td>
-<td>ALBORÁN SUR</td>
-<td>NaN</td>
-<td>Shallow (&lt;18km)</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>es2022chvdg</td>
-<td>2022-02-02</td>
-<td>17:31:41</td>
-<td>17:31:41</td>
-<td>28.6224</td>
-<td>-17.9208</td>
-<td>0.0</td>
-<td>1.7</td>
-<td>mbLg</td>
-<td>NaN</td>
-<td>SE TAZACORTE.ILP</td>
-<td>NaN</td>
-<td>Shallow (&lt;18km)</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-</div>
-</div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;EIZ0Ak8DHCvX0RU9fmOe&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;e5lbbHyRAH1Vv66uiNLr&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_ign[<span class="st">'DateTime'</span>] <span class="op">=</span> pd.to_datetime(df_ign[<span class="st">'Date'</span>] <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> df_ign[<span class="st">'Local time(*)'</span>])</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_ign[<span class="st">'DateTime'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
-<pre><code>0       2022-02-02 21:46:39
-1       2022-02-02 21:33:08
-2       2022-02-02 21:26:45
-3       2022-02-02 21:24:52
-4       2022-02-02 17:31:41
-                ...        
-12465   2021-08-31 02:30:13
-12466   2021-08-31 02:28:39
-12467   2021-08-31 02:27:43
-12468   2021-08-31 02:25:20
-12469   2021-08-31 02:02:21
-Name: DateTime, Length: 12470, dtype: datetime64[ns]</code></pre>
-</div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;jG6di49En8AIJPU048W3&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:null}" data-tags="[]" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_ign_early <span class="op">=</span> df_ign[df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-09-11'</span>]</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df_ign_pre <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-09-11'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-09-19 14:13:00'</span>)]</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>df_ign_phase1 <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-09-19 14:13:00'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-10-01'</span>)]</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df_ign_phase2 <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-10-01'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-12-01'</span>)]</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>df_ign_phase3 <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-12-01'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;=</span> <span class="st">'2021-12-31'</span>)]</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>df_erupt <span class="op">=</span> df_ign[(df_ign[<span class="st">'Date'</span>] <span class="op">&lt;</span> <span class="st">'2022-01-01'</span>) <span class="op">&amp;</span> (df_ign[<span class="st">'Date'</span>] <span class="op">&gt;</span> <span class="st">'2021-09-11'</span>)]</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>df_erupt_1 <span class="op">=</span> df_erupt[df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">1.0</span>]</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>df_erupt_2 <span class="op">=</span> df_erupt[(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="fl">1.0</span>)<span class="op">&amp;</span>(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">2.0</span>)]</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>df_erupt_3 <span class="op">=</span> df_erupt[(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="fl">2.0</span>)<span class="op">&amp;</span>(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">3.0</span>)]</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>df_erupt_4 <span class="op">=</span> df_erupt[(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="fl">3.0</span>)<span class="op">&amp;</span>(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">4.0</span>)]</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>df_erupt_5 <span class="op">=</span> df_erupt[df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;</span> <span class="fl">4.0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;h8OcNdWB7jEstsHf0YGb&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:null}" data-tags="[]" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tab10_colors <span class="op">=</span> (</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.12156862745098039</span>, <span class="fl">0.4666666666666667</span>,  <span class="fl">0.7058823529411765</span>  ),  <span class="co"># 1f77b4</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">1.0</span>,                 <span class="fl">0.4980392156862745</span>,  <span class="fl">0.054901960784313725</span>),  <span class="co"># ff7f0e</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.17254901960784313</span>, <span class="fl">0.6274509803921569</span>,  <span class="fl">0.17254901960784313</span> ),  <span class="co"># 2ca02c</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8392156862745098</span>,  <span class="fl">0.15294117647058825</span>, <span class="fl">0.1568627450980392</span>  ),  <span class="co"># d62728</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.5803921568627451</span>,  <span class="fl">0.403921568627451</span>,   <span class="fl">0.7411764705882353</span>  ),  <span class="co"># 9467bd</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.5490196078431373</span>,  <span class="fl">0.33725490196078434</span>, <span class="fl">0.29411764705882354</span> ),  <span class="co"># 8c564b</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8901960784313725</span>,  <span class="fl">0.4666666666666667</span>,  <span class="fl">0.7607843137254902</span>  ),  <span class="co"># e377c2</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.4980392156862745</span>,  <span class="fl">0.4980392156862745</span>,  <span class="fl">0.4980392156862745</span>  ),  <span class="co"># 7f7f7f</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7372549019607844</span>,  <span class="fl">0.7411764705882353</span>,  <span class="fl">0.13333333333333333</span> ),  <span class="co"># bcbd22</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.09019607843137255</span>, <span class="fl">0.7450980392156863</span>,  <span class="fl">0.8117647058823529</span>),    <span class="co"># 17becf</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>tab20_colors <span class="op">=</span> (</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.12156862745098039</span>, <span class="fl">0.4666666666666667</span>,  <span class="fl">0.7058823529411765</span>  ),  <span class="co"># 1f77b4</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6823529411764706</span>,  <span class="fl">0.7803921568627451</span>,  <span class="fl">0.9098039215686274</span>  ),  <span class="co"># aec7e8</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">1.0</span>,                 <span class="fl">0.4980392156862745</span>,  <span class="fl">0.054901960784313725</span>),  <span class="co"># ff7f0e</span></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">1.0</span>,                 <span class="fl">0.7333333333333333</span>,  <span class="fl">0.47058823529411764</span> ),  <span class="co"># ffbb78</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.17254901960784313</span>, <span class="fl">0.6274509803921569</span>,  <span class="fl">0.17254901960784313</span> ),  <span class="co"># 2ca02c</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.596078431372549</span>,   <span class="fl">0.8745098039215686</span>,  <span class="fl">0.5411764705882353</span>  ),  <span class="co"># 98df8a</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8392156862745098</span>,  <span class="fl">0.15294117647058825</span>, <span class="fl">0.1568627450980392</span>  ),  <span class="co"># d62728</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">1.0</span>,                 <span class="fl">0.596078431372549</span>,   <span class="fl">0.5882352941176471</span>  ),  <span class="co"># ff9896</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.5803921568627451</span>,  <span class="fl">0.403921568627451</span>,   <span class="fl">0.7411764705882353</span>  ),  <span class="co"># 9467bd</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7725490196078432</span>,  <span class="fl">0.6901960784313725</span>,  <span class="fl">0.8352941176470589</span>  ),  <span class="co"># c5b0d5</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.5490196078431373</span>,  <span class="fl">0.33725490196078434</span>, <span class="fl">0.29411764705882354</span> ),  <span class="co"># 8c564b</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7686274509803922</span>,  <span class="fl">0.611764705882353</span>,   <span class="fl">0.5803921568627451</span>  ),  <span class="co"># c49c94</span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8901960784313725</span>,  <span class="fl">0.4666666666666667</span>,  <span class="fl">0.7607843137254902</span>  ),  <span class="co"># e377c2</span></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.9686274509803922</span>,  <span class="fl">0.7137254901960784</span>,  <span class="fl">0.8235294117647058</span>  ),  <span class="co"># f7b6d2</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.4980392156862745</span>,  <span class="fl">0.4980392156862745</span>,  <span class="fl">0.4980392156862745</span>  ),  <span class="co"># 7f7f7f</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7803921568627451</span>,  <span class="fl">0.7803921568627451</span>,  <span class="fl">0.7803921568627451</span>  ),  <span class="co"># c7c7c7</span></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7372549019607844</span>,  <span class="fl">0.7411764705882353</span>,  <span class="fl">0.13333333333333333</span> ),  <span class="co"># bcbd22</span></span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8588235294117647</span>,  <span class="fl">0.8588235294117647</span>,  <span class="fl">0.5529411764705883</span>  ),  <span class="co"># dbdb8d</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.09019607843137255</span>, <span class="fl">0.7450980392156863</span>,  <span class="fl">0.8117647058823529</span>  ),  <span class="co"># 17becf</span></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6196078431372549</span>,  <span class="fl">0.8549019607843137</span>,  <span class="fl">0.8980392156862745</span>),    <span class="co"># 9edae5</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>tab20c_colors <span class="op">=</span> (</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.19215686274509805</span>, <span class="fl">0.5098039215686274</span>,  <span class="fl">0.7411764705882353</span>  ),  <span class="co"># 3182bd</span></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.4196078431372549</span>,  <span class="fl">0.6823529411764706</span>,  <span class="fl">0.8392156862745098</span>  ),  <span class="co"># 6baed6</span></span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6196078431372549</span>,  <span class="fl">0.792156862745098</span>,   <span class="fl">0.8823529411764706</span>  ),  <span class="co"># 9ecae1</span></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7764705882352941</span>,  <span class="fl">0.8588235294117647</span>,  <span class="fl">0.9372549019607843</span>  ),  <span class="co"># c6dbef</span></span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.9019607843137255</span>,  <span class="fl">0.3333333333333333</span>,  <span class="fl">0.050980392156862744</span>),  <span class="co"># e6550d</span></span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.9921568627450981</span>,  <span class="fl">0.5529411764705883</span>,  <span class="fl">0.23529411764705882</span> ),  <span class="co"># fd8d3c</span></span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.9921568627450981</span>,  <span class="fl">0.6823529411764706</span>,  <span class="fl">0.4196078431372549</span>  ),  <span class="co"># fdae6b</span></span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.9921568627450981</span>,  <span class="fl">0.8156862745098039</span>,  <span class="fl">0.6352941176470588</span>  ),  <span class="co"># fdd0a2</span></span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.19215686274509805</span>, <span class="fl">0.6392156862745098</span>,  <span class="fl">0.32941176470588235</span> ),  <span class="co"># 31a354</span></span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.4549019607843137</span>,  <span class="fl">0.7686274509803922</span>,  <span class="fl">0.4627450980392157</span>  ),  <span class="co"># 74c476</span></span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6313725490196078</span>,  <span class="fl">0.8509803921568627</span>,  <span class="fl">0.6078431372549019</span>  ),  <span class="co"># a1d99b</span></span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7803921568627451</span>,  <span class="fl">0.9137254901960784</span>,  <span class="fl">0.7529411764705882</span>  ),  <span class="co"># c7e9c0</span></span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.4588235294117647</span>,  <span class="fl">0.4196078431372549</span>,  <span class="fl">0.6941176470588235</span>  ),  <span class="co"># 756bb1</span></span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6196078431372549</span>,  <span class="fl">0.6039215686274509</span>,  <span class="fl">0.7843137254901961</span>  ),  <span class="co"># 9e9ac8</span></span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7372549019607844</span>,  <span class="fl">0.7411764705882353</span>,  <span class="fl">0.8627450980392157</span>  ),  <span class="co"># bcbddc</span></span>
-<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8549019607843137</span>,  <span class="fl">0.8549019607843137</span>,  <span class="fl">0.9215686274509803</span>  ),  <span class="co"># dadaeb</span></span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.38823529411764707</span>, <span class="fl">0.38823529411764707</span>, <span class="fl">0.38823529411764707</span> ),  <span class="co"># 636363</span></span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.5882352941176471</span>,  <span class="fl">0.5882352941176471</span>,  <span class="fl">0.5882352941176471</span>  ),  <span class="co"># 969696</span></span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.7411764705882353</span>,  <span class="fl">0.7411764705882353</span>,  <span class="fl">0.7411764705882353</span>  ),  <span class="co"># bdbdbd</span></span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.8509803921568627</span>,  <span class="fl">0.8509803921568627</span>,  <span class="fl">0.8509803921568627</span>  ),  <span class="co"># d9d9d9</span></span>
-<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;JdjXAoDIAd602KmWFREs&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;NHBa6RAsbCwV49ssGVZt&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Rectangle</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.dates <span class="im">import</span> date2num, num2date</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'font.sans-serif'</span>] <span class="op">=</span> <span class="st">"Helvetica"</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'font.family'</span>] <span class="op">=</span> <span class="st">"sans-serif"</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'xtick.labelsize'</span>] <span class="op">=</span> <span class="dv">14</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'ytick.labelsize'</span>] <span class="op">=</span> <span class="dv">14</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'ytick.labelleft'</span>] <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'ytick.labelright'</span>] <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> matplotlib.pyplot.figure(figsize<span class="op">=</span>(<span class="dv">24</span>,<span class="dv">12</span>))</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating axis</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># add_axes([xmin,ymin,dx,dy])</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>ax_min <span class="op">=</span> fig.add_axes([<span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>])</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>ax_min.axis(<span class="st">'off'</span>)</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>ax_max <span class="op">=</span> fig.add_axes([<span class="fl">0.99</span>, <span class="fl">0.99</span>, <span class="fl">0.01</span>, <span class="fl">0.01</span>])</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>ax_max.axis(<span class="st">'off'</span>)</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>ax_timeline <span class="op">=</span> fig.add_axes([<span class="fl">0.04</span>, <span class="fl">0.1</span>, <span class="fl">0.92</span>, <span class="fl">0.85</span>])</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>ax_timeline.spines[<span class="st">"top"</span>].set_visible(<span class="va">False</span>)</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>ax_timeline.spines[<span class="st">"right"</span>].set_visible(<span class="va">False</span>)</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>ax_timeline.spines[<span class="st">"left"</span>].set_visible(<span class="va">False</span>)</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>ax_timeline.grid(axis<span class="op">=</span><span class="st">'x'</span>)</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>ax_timeline.axvline(x<span class="op">=</span>dt.datetime(<span class="dv">2021</span>, <span class="dv">9</span>, <span class="dv">19</span>, <span class="dv">14</span>, <span class="dv">13</span>), ymin<span class="op">=</span><span class="fl">0.075</span>, ymax<span class="op">=</span><span class="fl">0.972</span>, color<span class="op">=</span><span class="st">'r'</span>, linewidth<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_scatter(df, c, alpha<span class="op">=</span><span class="fl">0.8</span>):</span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>np.exp2(<span class="fl">1.3</span><span class="op">*</span>df[<span class="st">'Magnitude'</span>])</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ax_timeline.scatter(df[<span class="st">'DateTime'</span>], df[<span class="st">'Depth(km)'</span>], s<span class="op">=</span>M, c<span class="op">=</span>c, alpha<span class="op">=</span>alpha, edgecolor<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, zorder<span class="op">=</span><span class="dv">2</span>)<span class="op">;</span></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co"># make_scatter(df_erupt, c=tab20c_colors[-1])</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>points_1 <span class="op">=</span> make_scatter(df_erupt_1, c<span class="op">=</span>[tab20c_colors[<span class="op">-</span><span class="dv">1</span>]], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>points_2 <span class="op">=</span> make_scatter(df_erupt_2, c<span class="op">=</span>[tab20c_colors[<span class="op">-</span><span class="dv">1</span>]], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>points_3 <span class="op">=</span> make_scatter(df_erupt_3, c<span class="op">=</span>[tab20c_colors[<span class="op">-</span><span class="dv">1</span>]], alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>points_4 <span class="op">=</span> make_scatter(df_erupt_4, c<span class="op">=</span>[tab20c_colors[<span class="op">-</span><span class="dv">1</span>]], alpha<span class="op">=</span><span class="fl">0.65</span>)</span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>points_5 <span class="op">=</span> make_scatter(df_erupt_5, c<span class="op">=</span>[tab20c_colors[<span class="op">-</span><span class="dv">1</span>]], alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>ax_timeline.tick_params(axis<span class="op">=</span><span class="st">'x'</span>, labelrotation<span class="op">=</span><span class="dv">0</span>, bottom<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>ax_timeline.set_ylabel(<span class="st">''</span>)</span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>ax_timeline.yaxis.set_ticks_position(<span class="st">'both'</span>)</span>
-<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>ax_timeline.yaxis.set_ticks_position(<span class="st">'both'</span>)</span>
-<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>xticks <span class="op">=</span> ax_timeline.get_xticks()</span>
-<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>new_xticks <span class="op">=</span> [date2num(pd.to_datetime(<span class="st">'2021-09-11'</span>)),</span>
-<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>    date2num(pd.to_datetime(<span class="st">'2021-09-19 14:13:00'</span>))]</span>
-<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>new_xticks <span class="op">=</span> np.append(new_xticks, xticks[<span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>])</span>
-<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>ax_timeline.set_xticks(new_xticks)</span>
-<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>ax_timeline.invert_yaxis()</span>
-<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>ax_timeline.spines[<span class="st">'bottom'</span>].set_position((<span class="st">'data'</span>, <span class="dv">45</span>))</span>
-<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>ax_timeline.margins(tight<span class="op">=</span><span class="va">True</span>, x<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>ax_timeline.legend(</span>
-<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>    [points_1, points_2, points_3, points_4, points_5],</span>
-<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'0 &lt; M &lt;= 1'</span>,<span class="st">'1 &lt; M &lt;= 2'</span>,<span class="st">'2 &lt; M &lt;= 3'</span>,<span class="st">'3 &lt; M &lt;= 4'</span>,<span class="st">'M &gt; 4'</span>],</span>
-<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>    loc<span class="op">=</span><span class="st">'best'</span>, bbox_to_anchor<span class="op">=</span>(<span class="fl">1.02</span>, <span class="fl">0.88</span>, <span class="fl">0.15</span>, <span class="fl">0.1</span>), fancybox<span class="op">=</span><span class="va">True</span>, borderpad<span class="op">=</span><span class="fl">1.0</span>, labelspacing<span class="op">=</span><span class="dv">1</span>, mode<span class="op">=</span><span class="st">"expand"</span>, title<span class="op">=</span><span class="st">"Event Magnitude (M)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>, title_fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>ax_timeline.add_patch(Rectangle((date2num(pd.to_datetime(<span class="st">'2021-09-11'</span>)), <span class="op">-</span><span class="dv">1</span>), date2num(pd.to_datetime(<span class="st">'2021-09-19 14:13:00'</span>))<span class="op">-</span>date2num(pd.to_datetime(<span class="st">'2021-09-11'</span>)), <span class="dv">46</span>, color<span class="op">=</span>tab20_colors[<span class="dv">0</span>], zorder<span class="op">=</span><span class="dv">1</span>, alpha<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>ax_timeline.add_patch(Rectangle((date2num(pd.to_datetime(<span class="st">'2021-09-19 14:13:00'</span>)), <span class="op">-</span><span class="dv">1</span>), date2num(pd.to_datetime(<span class="st">'2021-10-01'</span>))<span class="op">-</span>date2num(pd.to_datetime(<span class="st">'2021-09-19 14:13:00'</span>)), <span class="dv">46</span>, color<span class="op">=</span>tab20_colors[<span class="dv">2</span>], zorder<span class="op">=</span><span class="dv">1</span>, alpha<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>ax_timeline.add_patch(Rectangle((date2num(pd.to_datetime(<span class="st">'2021-10-01'</span>)), <span class="op">-</span><span class="dv">1</span>), date2num(pd.to_datetime(<span class="st">'2021-12-01'</span>))<span class="op">-</span>date2num(pd.to_datetime(<span class="st">'2021-10-01'</span>)), <span class="dv">46</span>, color<span class="op">=</span>tab20_colors[<span class="dv">4</span>], zorder<span class="op">=</span><span class="dv">1</span>, alpha<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>ax_timeline.add_patch(Rectangle((date2num(pd.to_datetime(<span class="st">'2021-12-01'</span>)), <span class="op">-</span><span class="dv">1</span>), date2num(pd.to_datetime(<span class="st">'2021-12-31'</span>))<span class="op">-</span>date2num(pd.to_datetime(<span class="st">'2021-12-01'</span>))<span class="op">+</span><span class="dv">1</span>, <span class="dv">46</span>, color<span class="op">=</span>tab20_colors[<span class="dv">6</span>], zorder<span class="op">=</span><span class="dv">1</span>, alpha<span class="op">=</span><span class="fl">0.1</span>))<span class="op">;</span></span>
-<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'timeline_grey_with_panels.eps'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'eps'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.</code></pre>
-</div>
+<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;JdjXAoDIAd602KmWFREs&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;NHBa6RAsbCwV49ssGVZt&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div id="fig-rectangle" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="article_files/figure-html/fig-rectangle-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="article_files/figure-html/fig-rectangle-output-1.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;3: A timeline of volcanic activity through the years.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="cumulative-distrubtion-plots" class="level2">
-<h2 class="anchored" data-anchor-id="cumulative-distrubtion-plots">Cumulative Distrubtion Plots</h2>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;oZqQc2uSzYXxns0mVkWX&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:null}" data-tags="[]" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cumulative_events_mag_depth(df, hue<span class="op">=</span><span class="st">'Depth'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>, ax<span class="op">=</span><span class="va">None</span>, dpi<span class="op">=</span><span class="dv">300</span>, palette<span class="op">=</span><span class="va">None</span>, kde<span class="op">=</span><span class="va">True</span>):</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    matplotlib.rcParams[<span class="st">'ytick.labelright'</span>] <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.jointplot(x<span class="op">=</span><span class="st">"Magnitude"</span>, y<span class="op">=</span><span class="st">"Depth(km)"</span>, data<span class="op">=</span>df,</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                      kind<span class="op">=</span>kind, hue<span class="op">=</span>hue, height<span class="op">=</span><span class="dv">10</span>, space<span class="op">=</span><span class="fl">0.1</span>, marginal_ticks<span class="op">=</span><span class="va">False</span>, ratio<span class="op">=</span><span class="dv">8</span>, alpha<span class="op">=</span><span class="fl">0.6</span>,</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                      hue_order<span class="op">=</span>[<span class="st">'Shallow (&lt;18km)'</span>, <span class="st">'Interchange (18km&gt;x&gt;28km)'</span>, <span class="st">'Deep (&gt;28km)'</span>],</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>                      ax<span class="op">=</span>ax, palette<span class="op">=</span>palette, ylim<span class="op">=</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">50</span>), xlim<span class="op">=</span>(<span class="fl">0.3</span>,<span class="fl">5.6</span>), edgecolor<span class="op">=</span><span class="st">".2"</span>, marginal_kws<span class="op">=</span><span class="bu">dict</span>(bins<span class="op">=</span><span class="dv">20</span>, hist_kws<span class="op">=</span>{<span class="st">'edgecolor'</span>: <span class="st">'black'</span>}))</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kde:</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        g.plot_joint(sns.kdeplot, color<span class="op">=</span><span class="st">"b"</span>, zorder<span class="op">=</span><span class="dv">1</span>, levels<span class="op">=</span><span class="dv">15</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    g.fig.axes[<span class="dv">0</span>].invert_yaxis()<span class="op">;</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    g.fig.set_dpi(dpi)</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cumulative_events_spatial(df, hue<span class="op">=</span><span class="st">'Depth'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>, ax<span class="op">=</span><span class="va">None</span>, dpi<span class="op">=</span><span class="dv">300</span>, palette<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.jointplot(x<span class="op">=</span><span class="st">"Longitude"</span>, y<span class="op">=</span><span class="st">"Depth(km)"</span>, data<span class="op">=</span>df,</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>                      kind<span class="op">=</span>kind, hue<span class="op">=</span>hue, color<span class="op">=</span><span class="st">"m"</span>, height<span class="op">=</span><span class="dv">10</span>, palette<span class="op">=</span>palette,</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>                      hue_order<span class="op">=</span>[<span class="st">'Shallow (&lt;18km)'</span>, <span class="st">'Interchange (18km&gt;x&gt;28km)'</span>,  <span class="st">'Deep (&gt;28km)'</span>, ], ax<span class="op">=</span>ax, ylim<span class="op">=</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">50</span>))</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    g.plot_joint(sns.kdeplot, color<span class="op">=</span><span class="st">"b"</span>, zorder<span class="op">=</span><span class="dv">1</span>, levels<span class="op">=</span><span class="dv">15</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    g.fig.axes[<span class="dv">0</span>].invert_yaxis()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;6adOSmnAqJVgcEF994GM&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;QFoukcRwHpSM97pTjHEL&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>cumulative_events_mag_depth(df_ign, hue<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">'Cumulative Events 01-01-2017 to 01-01-2022'</span>, y<span class="op">=</span><span class="fl">1.01</span>)<span class="op">;</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'cuml_events_all.eps'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'eps'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/usr/local/lib/python3.11/site-packages/seaborn/axisgrid.py:2214: UserWarning: The marginal plotting function has changed to `histplot`, which does not accept the following argument(s): hist_kws.
-  warnings.warn(msg, UserWarning)
-The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.</code></pre>
-</div>
+<section id="cumulative-distribution-plots" class="level3">
+<h3 class="anchored" data-anchor-id="cumulative-distribution-plots">Cumulative Distribution Plots</h3>
+<div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;6adOSmnAqJVgcEF994GM&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;QFoukcRwHpSM97pTjHEL&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="11">
 <div class="cell-output cell-output-display">
-<p><img src="article_files/figure-html/cell-10-output-2.png" class="img-fluid"></p>
+<p><img src="article_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
 </section>
-<section id="results" class="level1">
-<h1>Results</h1>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
 <p>The dataset was loaded into this Jupyter notebook and filtered down to La Palma events only. This results in 5465 data points which we then visualized to understand their distributions spatially, by depth, by magnitude and in time.</p>
 <p>From our analysis above, we can see 3 different systems in play.</p>
 <p>Firstly, the shallow earthquake swarm leading up to the eruption on 19th September, related to significant surface deformation and shallow magma intrusion.</p>
 <p>After the eruption, continuous shallow seismicity started at 10-15km corresponding to magma movement in the crustal reservoir.</p>
 <p>Subsequently, high magnitude events begin occurring at 30-40km depths corresponding to changes in the mantle reservoir. These are also continuous but occur with a lower frequency than in the crustal reservoir.</p>
 </section>
-<section id="conclusions" class="level1">
-<h1>Conclusions</h1>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
 <p>From the analysis of the earthquake data collected and published by IGN for the period of 11 September through to 9 November 2021. Visualization of the earthquake events at different depths appears to confirm the presence of both mantle and crustal reservoirs as proposed by {cite:t}<code>marrero2019</code>.</p>
 <blockquote class="blockquote">
 <p>Data availability statement should be specified in a separate cell with metadata <code>"part": "availability"</code>, similar to the abstract.</p>
 </blockquote>
 <p>A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+
 
 </section>
 
@@ -681,7 +295,25 @@ The PostScript backend does not support transparency; partially transparent arti
 <div id="ref-marrero2019" class="csl-entry" role="listitem">
 Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
 </div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC-BY-SA</div></div></section></div></main>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC-BY-SA</div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2022,
+  author = {},
+  title = {Notebooks {Now!} {Quarto} {Submission} {Template} (Lite)},
+  date = {2022-05-11},
+  langid = {en},
+  abstract = {In September 2021, a significant jump in seismic activity
+    on the island of La Palma (Canary Islands, Spain) signaled the start
+    of a volcanic crisis that still continues at the time of writing.
+    Earthquake data is continually collected and published by the
+    Instituto Geográphico Nacional (IGN). We have created an accessible
+    dataset from this and completed preliminary data analysis which
+    shows seismicity originating at two distinct depths, consistent with
+    the model of a two reservoir system feeding the currently very
+    active volcano.}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2022" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Notebooks Now! Quarto Submission Template (Lite).”</span> 2022.
+Journal of Notebooks Now! May 11, 2022.
+</div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
