@@ -5,6 +5,6 @@ $--
 $-- %%%% TODO %%%%%
 $-- Customize is needed, like below for printing the authors. Otherwise remove this partials to use Quarto default one.
 $-- %%%%%%%%%%%%%%%%
-$if(journalname)$
-\journalname{$journalname$}
+$if(citation.container-title)$
+\journalname{$citation.container-title$}
 $endif$
