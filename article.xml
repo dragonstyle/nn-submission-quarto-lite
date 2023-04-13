@@ -105,8 +105,9 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 
 <permissions>
 
-<license>
-<license-p>CC-BY-SA</license-p>
+<license license-type="creative-commons">
+<ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-sa/4.0/</ali:license_ref>
+
 </license>
 
 </permissions>
