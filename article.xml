@@ -137,14 +137,6 @@ system feeding the currently very active volcano.</p>
 <body>
 <sec id="introduction">
   <title>Introduction</title>
-  <disp-quote>
-    <p>The content of your notebook may be broken into any number of
-    markdown or code cells. Markdown cells use MyST markdown and support
-    <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/typography">standard
-    markdown typography</ext-link> and many
-    <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/syntax-overview">directives
-    and roles</ext-link> for figures, tables, equations, etc.</p>
-  </disp-quote>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands, a Spanish territory situated is the
   Atlantic Ocean where at their closest point are 100km from the African
@@ -166,13 +158,6 @@ system feeding the currently very active volcano.</p>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
     <xref alt="Table 1" rid="tbl-history">Table 1</xref>.</p>
-    <disp-quote>
-      <p>Simple tables may be created using the
-      <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/tables">list-table
-      directive</ext-link>. Similar to figures, tables may be referenced
-      in the text by their <monospace>name</monospace>. The caption for
-      this table is the first line of the directive.</p>
-    </disp-quote>
     <table-wrap>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
@@ -224,12 +209,6 @@ system feeding the currently very active volcano.</p>
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution
     <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>.</p>
-    <disp-quote>
-      <p>Numbered equations may be defined using the
-      <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/math">math
-      directive or in line</ext-link>. Equations defined with the math
-      directive may be reference in the text by label.</p>
-    </disp-quote>
     <p><styled-content id="eq-poisson"><disp-formula><alternatives>
     <tex-math><![CDATA[
     p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -263,23 +242,6 @@ system feeding the currently very active volcano.</p>
   </sec>
   <sec id="magma-reservoirs">
     <title>Magma Reservoirs</title>
-    <disp-quote>
-      <p>You may
-      <ext-link ext-link-type="uri" xlink:href="https://myst-tools.org/docs/mystjs/citations">add
-      citations two ways</ext-link>. First, you may simply insert a
-      markdown link link to a DOI like so:
-      <ext-link ext-link-type="uri" xlink:href="10.1093/nar/22.22.4673"></ext-link>.
-      No additional bibliographic information is required for this
-      approach; the reference will be looked up by DOI and added
-      implicitly to the references. Alternatively, you may provide the
-      bibliography directly as <monospace>references.bib</monospace>
-      BibTeX file, then embed the citation by BibTeX key in your text
-      using the <monospace>cite:p</monospace> or
-      <monospace>cite:t</monospace> for parenthetical or textual
-      citations, respectively. The following paragraph provides an
-      example of this. A single paper may combine both DOI and BibTeX
-      citations.</p>
-    </disp-quote>
     <p>Studies of the magma systems feeding the volcano, such as
     (<xref alt="Marrero et al. 2019" rid="ref-marrero2019" ref-type="bibr">Marrero
     et al. 2019</xref>) has proposed that there are two main magma
@@ -298,11 +260,6 @@ system feeding the currently very active volcano.</p>
 </sec>
 <sec id="dataset">
   <title>Dataset</title>
-  <disp-quote>
-    <p>All data used in the notebook should be present in the
-    <monospace>data/</monospace> folder so notebooks may be executed in
-    place with no additional input.</p>
-  </disp-quote>
   <p>The earthquake dataset used in our analysis was generated from the
   <ext-link ext-link-type="uri" xlink:href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN
   web portal</ext-link> this is public data released under a permissive
@@ -314,21 +271,10 @@ system feeding the currently very active volcano.</p>
   data.</p>
   <sec id="main-timeline-figure">
     <title>Main Timeline Figure</title>
-    <disp-quote>
-      <p>Code cells may be seamlessly interleaved with markdown cells.
-      Currently, with a single-article submission, code cannot be hidden
-      in the output document.</p>
-    </disp-quote>
   </sec>
   <sec id="visualising-long-term-earthquake-data">
     <title>Visualising Long term earthquake data</title>
     <p>Data taken directly from the IGN Catalog</p>
-    <disp-quote>
-      <p>Supported cell outputs below include
-      <monospace>pandas</monospace> dataframe, raw text output,
-      <monospace>matplotlib</monospace> plot, and
-      <monospace>seaborn</monospace> plot.</p>
-    </disp-quote>
     <fig id="fig-rectangle">
       <caption><p>Figure 3: A timeline of volcanic activity through the
       years.</p></caption>
@@ -365,12 +311,6 @@ system feeding the currently very active volcano.</p>
   Visualization of the earthquake events at different depths appears to
   confirm the presence of both mantle and crustal reservoirs as proposed
   by {cite:t}<monospace>marrero2019</monospace>.</p>
-  <disp-quote>
-    <p>Data availability statement should be specified in a separate
-    cell with metadata
-    <monospace>&quot;part&quot;: &quot;availability&quot;</monospace>,
-    similar to the abstract.</p>
-  </disp-quote>
   <p>A web scraping script was developed to pull data into a
   machine-readable form for analysis. That code tool
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.5">
+<meta name="generator" content="quarto-1.4.6">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -142,10 +142,7 @@ div.csl-indent {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<blockquote class="blockquote">
-<p>The content of your notebook may be broken into any number of markdown or code cells. Markdown cells use MyST markdown and support <a href="https://myst-tools.org/docs/mystjs/typography">standard markdown typography</a> and many <a href="https://myst-tools.org/docs/mystjs/syntax-overview">directives and roles</a> for figures, tables, equations, etc.</p>
-</blockquote>
-<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands, a Spanish territory situated is the Atlantic Ocean where at their closest point are 100km from the African coast <a href="#fig-map">Figure&nbsp;1</a>. The island is one of the youngest, remains active and is still in the island forming stage.</p>
+<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands, a Spanish territory situated is the Atlantic Ocean where at their closest point are 100km from the African coast <a href="#fig-map" class="quarto-xref">Figure&nbsp;1</a>. The island is one of the youngest, remains active and is still in the island forming stage.</p>
 <div id="fig-map" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/la-palma-map.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></p>
@@ -155,10 +152,7 @@ div.csl-indent {
 <p>La Palma has been constructed by various phases of volcanism, the most recent and currently active being the <em>Cumbre Vieja</em> volcano, a north-south volcanic ridge that constitutes the southern half of the island.</p>
 <section id="eruption-history" class="level3">
 <h3 class="anchored" data-anchor-id="eruption-history">Eruption History</h3>
-<p>A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in <a href="#tbl-history">Table&nbsp;1</a>.</p>
-<blockquote class="blockquote">
-<p>Simple tables may be created using the <a href="https://myst-tools.org/docs/mystjs/tables">list-table directive</a>. Similar to figures, tables may be referenced in the text by their <code>name</code>. The caption for this table is the first line of the directive.</p>
-</blockquote>
+<p>A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in <a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a>.</p>
 <div id="tbl-history" class="anchored">
 <table class="table">
 <caption>Table&nbsp;1: Recent historic eruptions on La Palma</caption>
@@ -204,10 +198,7 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-<p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson">Equation&nbsp;1</a>.</p>
-<blockquote class="blockquote">
-<p>Numbered equations may be defined using the <a href="https://myst-tools.org/docs/mystjs/math">math directive or in line</a>. Equations defined with the math directive may be reference in the text by label.</p>
-</blockquote>
+<p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>.</p>
 <p><span id="eq-poisson"><span class="math display">\[
 p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
 \tag{1}\]</span></span></p>
@@ -219,9 +210,6 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 </section>
 <section id="magma-reservoirs" class="level3">
 <h3 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h3>
-<blockquote class="blockquote">
-<p>You may <a href="https://myst-tools.org/docs/mystjs/citations">add citations two ways</a>. First, you may simply insert a markdown link link to a DOI like so: <a href="10.1093/nar/22.22.4673"></a>. No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as <code>references.bib</code> BibTeX file, then embed the citation by BibTeX key in your text using the <code>cite:p</code> or <code>cite:t</code> for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.</p>
-</blockquote>
 <p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">(<a href="#ref-marrero2019" role="doc-biblioref">Marrero et al. 2019</a>)</span> has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
 <div id="fig-reservoirs" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -229,27 +217,18 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <figcaption class="figure-caption">Figure&nbsp;2: Proposed model from <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span></figcaption>
 </figure>
 </div>
-<p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs">Figure&nbsp;2</a>.</p>
+<p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs" class="quarto-xref">Figure&nbsp;2</a>.</p>
 </section>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<blockquote class="blockquote">
-<p>All data used in the notebook should be present in the <code>data/</code> folder so notebooks may be executed in place with no additional input.</p>
-</blockquote>
 <p>The earthquake dataset used in our analysis was generated from the <a href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN web portal</a> this is public data released under a permissive license. Data recorded using the network of Seismic Monitoring Stations on the island. A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
 <section id="main-timeline-figure" class="level3">
 <h3 class="anchored" data-anchor-id="main-timeline-figure">Main Timeline Figure</h3>
-<blockquote class="blockquote">
-<p>Code cells may be seamlessly interleaved with markdown cells. Currently, with a single-article submission, code cannot be hidden in the output document.</p>
-</blockquote>
 </section>
 <section id="visualising-long-term-earthquake-data" class="level3">
 <h3 class="anchored" data-anchor-id="visualising-long-term-earthquake-data">Visualising Long term earthquake data</h3>
 <p>Data taken directly from the IGN Catalog</p>
-<blockquote class="blockquote">
-<p>Supported cell outputs below include <code>pandas</code> dataframe, raw text output, <code>matplotlib</code> plot, and <code>seaborn</code> plot.</p>
-</blockquote>
 <div class="cell" data-iooxa="{&quot;id&quot;:{&quot;block&quot;:&quot;JdjXAoDIAd602KmWFREs&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1},&quot;outputId&quot;:{&quot;block&quot;:&quot;NHBa6RAsbCwV49ssGVZt&quot;,&quot;project&quot;:&quot;1Bk7uPlcMuaTyKEshESj&quot;,&quot;version&quot;:1}}" data-tags="[]" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div id="fig-rectangle" class="quarto-figure quarto-figure-center anchored">
@@ -281,9 +260,6 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <section id="conclusions" class="level2">
 <h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
 <p>From the analysis of the earthquake data collected and published by IGN for the period of 11 September through to 9 November 2021. Visualization of the earthquake events at different depths appears to confirm the presence of both mantle and crustal reservoirs as proposed by {cite:t}<code>marrero2019</code>.</p>
-<blockquote class="blockquote">
-<p>Data availability statement should be specified in a separate cell with metadata <code>"part": "availability"</code>, similar to the abstract.</p>
-</blockquote>
 <p>A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
 </section>
 <section id="references" class="level2 unnumbered">
@@ -421,6 +397,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, function() {
+      let href = xref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children.length > 2) {
+          for (let i = 0; i < 2; i++) {
+            container.appendChild(note.children[i].cloneNode(true));
+          }
+          return container.innerHTML
+        } else {
+          return note.innerHTML;
+        }
+      } else {
+        return note.innerHTML;
+      }
     });
   }
       let selectedAnnoteEl;
