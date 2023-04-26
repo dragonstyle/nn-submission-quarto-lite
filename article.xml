@@ -143,6 +143,10 @@ system feeding the currently very active volcano.</p>
   coast <xref alt="Figure 1" rid="fig-map">Figure 1</xref>. The island
   is one of the youngest, remains active and is still in the island
   forming stage.</p>
+  <boxed-text>
+  <p><bold>Test</bold></p>
+  <p>This is a note.</p>
+  </boxed-text>
   <fig id="fig-map">
     <caption><p>Figure 1: Map of La Palma in the Canary Islands. Image
     credit
